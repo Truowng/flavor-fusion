@@ -22,24 +22,32 @@ const aboutSlider = new Swiper("#homepage-about .swiper", {
   },
 });
 
-const productSlider = new Swiper("#homepage-product .swiper", {
-  direction: "horizontal",
-  loop: true,
+$("#homepage-product .slick-slider").slick({
+  slidesToShow: 1,
   speed: 1000,
-  initialSlide: 1,
-  spaceBetween: 15,
-  autoplay: {
-    delay: 2000,
-  },
-  navigation: {
-    nextEl: "#homepage-product .slider-button-next",
-    prevEl: "#homepage-product .slider-button-prev",
-  },
-  breakpoints: {
-    767: {
-      spaceBetween: 0,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  prevArrow: $("#homepage-product .slider-button-prev"),
+  nextArrow: $("#homepage-product .slider-button-next"),
+  responsive: [
+    {
+      breakpoint: 1199,
+      settings: {
+        arrows: false,
+        variableWidth: false,
+      },
     },
-  },
+
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: "40px",
+        slidesToShow: 1,
+      },
+    },
+  ],
 });
 
 const servicesSlider = new Swiper("#homepage-service .swiper", {
@@ -115,6 +123,8 @@ const newsSlider = new Swiper("#homepage-news .swiper", {
       spaceBetween: 26,
     },
   },
+
+  autoHeight: true,
 });
 
 const instagramSlider = new Swiper("#homepage-instagram .swiper", {

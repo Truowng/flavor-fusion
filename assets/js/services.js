@@ -46,6 +46,7 @@ const newsSlider = new Swiper("#services-news .swiper", {
       spaceBetween: 26,
     },
   },
+  autoHeight: true,
 });
 
 // SHOW IMAGES
