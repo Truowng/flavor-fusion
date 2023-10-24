@@ -1,6 +1,6 @@
 // START BLOG DETAIL PAGE
 // START BANNER
-#blog-detail-banner {
+#fhm-blog-detail-banner {
   background: linear-gradient(
       180deg,
       #000 0%,
@@ -47,7 +47,7 @@
 // END BANNER
 
 // START POST
-#blog-detail-post {
+#fhm-blog-detail-post {
   margin-top: 80px;
   .post-info {
     @include flex(row, unset, center, 5px, wrap);
@@ -220,7 +220,7 @@
 // END POST
 
 // START RELATE NEWS
-#blog-detail-relate-news {
+#fhm-blog-detail-relate-news {
   padding: 100px 0 125px;
   margin-top: 75px;
   background-color: $white-3;
@@ -289,7 +289,7 @@
 // END RELATE NEWS
 
 // START CTA
-#blog-detail-cta {
+#fhm-blog-detail-cta {
   margin-top: 0;
 }
 // END CTA

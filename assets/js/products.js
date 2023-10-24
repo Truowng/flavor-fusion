@@ -1,4 +1,4 @@
-const productsSlider = new Swiper("#products .swiper", {
+const productsSlider = new Swiper("#fhm-products .swiper", {
   direction: "horizontal",
   slidesPerView: 2,
   spaceBetween: 22,
@@ -8,8 +8,8 @@ const productsSlider = new Swiper("#products .swiper", {
     delay: 2000,
   },
   navigation: {
-    nextEl: "#products .slider-button-next",
-    prevEl: "#products .slider-button-prev",
+    nextEl: "#fhm-products .slider-button-next",
+    prevEl: "#fhm-products .slider-button-prev",
   },
   breakpoints: {
     480: {
@@ -23,3 +23,56 @@ const productsSlider = new Swiper("#products .swiper", {
     },
   },
 });
+
+const productGroup = document.querySelector(".products-group.active");
+const productItem = ` <div class="products-item">
+                  <div class="image">
+                    <img
+                      src="./assets/images/products/pizza4.jpg"
+                      alt="Pizza"
+                      title="Pizza"
+                    />
+                  </div>
+                  <a
+                    href="#"
+                    title="Seafood Spicy Tomato sauce with Smoked Cheese Pizza"
+                    class="name"
+                    >Seafood Spicy Tomato sauce with Smoked Cheese Pizza</a
+                  >
+                  <span class="price"> $29.00 </span>
+                </div>
+                 <div class="products-item">
+                  <div class="image">
+                    <img
+                      src="./assets/images/products/pizza4.jpg"
+                      alt="Pizza"
+                      title="Pizza"
+                    />
+                  </div>
+                  <a
+                    href="#"
+                    title="Seafood Spicy Tomato sauce with Smoked Cheese Pizza"
+                    class="name"
+                    >Seafood Spicy Tomato sauce with Smoked Cheese Pizza</a
+                  >
+                  <span class="price"> $29.00 </span>
+                </div>
+                 <div class="products-item">
+                  <div class="image">
+                    <img
+                      src="./assets/images/products/pizza4.jpg"
+                      alt="Pizza"
+                      title="Pizza"
+                    />
+                  </div>
+                  <a
+                    href="#"
+                    title="Seafood Spicy Tomato sauce with Smoked Cheese Pizza"
+                    class="name"
+                    >Seafood Spicy Tomato sauce with Smoked Cheese Pizza</a
+                  >
+                  <span class="price"> $29.00 </span>
+                </div>`;
+const loadMore = () => {
+  productGroup.innerHTML += productItem;
+};

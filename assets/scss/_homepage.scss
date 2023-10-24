@@ -1,7 +1,7 @@
 // START HOMEPAGE
 
 // START BANNER
-#homepage-banner {
+#fhm-homepage-banner {
   padding-top: 172px;
   height: 1096px;
   background-image: url(../images/banners/hero-banner.jpg);
@@ -151,13 +151,13 @@
 // END BANNER
 
 // START CLIENTS
-#homepage-clients {
+#fhm-homepage-clients {
   margin-top: 70px;
 }
 // END CLIENTS
 
 // START ABOUT
-#homepage-about {
+#fhm-homepage-about {
   margin-top: 150px;
   position: relative;
   @include landscape-phone {
@@ -279,7 +279,7 @@
 // END ABOUT
 
 // START PRODUCT
-#homepage-product {
+#fhm-homepage-product {
   margin-top: 120px;
   overflow: hidden;
   @include tablet {
@@ -422,7 +422,7 @@
 // END PRODUCT
 
 // START MENU
-#homepage-menu {
+#fhm-homepage-menu {
   margin-top: 100px;
   .menu-wrapper {
     @include flex(row, space-between, unset, 80px, nowrap);
@@ -563,7 +563,7 @@
 // END MENU
 
 // START REASON
-#homepage-reason {
+#fhm-homepage-reason {
   margin-top: 120px;
   position: relative;
   @include desktop {
@@ -653,7 +653,7 @@
 // END REASON
 
 // START SERVICE
-#homepage-service {
+#fhm-homepage-service {
   margin-top: 100px;
   position: relative;
   .decor-element {
@@ -867,7 +867,7 @@
 // END SERVICE
 
 // START TESTIMONIALS
-#homepage-testimonials {
+#fhm-homepage-testimonials {
   background-image: url(../images/banners/testimonials.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -993,13 +993,13 @@
 // END TESTIMONIALS
 
 // START NEWS
-#homepage-news {
+#fhm-homepage-news {
   margin-top: 100px;
 }
 // END NEWS
 
 // START INSTAGRAM
-#homepage-instagram {
+#fhm-homepage-instagram {
   margin-top: 100px;
   overflow: hidden;
   .instagram-heading {
@@ -1147,7 +1147,7 @@
 // END INSTAGRAM
 
 // START CTA
-#homepage-cta {
+#fhm-homepage-cta {
   @include mobile {
     margin-top: 8px;
   }

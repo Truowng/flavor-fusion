@@ -1,7 +1,7 @@
 // START SERVICE PAGE
 
 // START BANNER
-#services-banner {
+#fhm-services-banner {
   background-image: url(../images/banners/services-banner.jpg);
   padding: 269px 0 267px;
   @include landscape-phone {
@@ -12,7 +12,7 @@
 // END BANNER
 
 // START SERVICES
-#services {
+#fhm-services {
   margin-top: 100px;
   @include landscape-phone {
     margin-top: 70px;
@@ -420,7 +420,7 @@
 // END SERVICES
 
 // START COMMITMENT
-#services-commitment {
+#fhm-services-commitment {
   position: relative;
   margin-top: 120px;
   @include landscape-phone {
@@ -515,7 +515,7 @@
 // END COMMITMENT
 
 // START SERVICE NEWS
-#services-news {
+#fhm-services-news {
   margin-top: 225px;
   @include large-desktop {
     margin-top: 130px;

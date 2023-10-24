@@ -1,4 +1,4 @@
-const postSlider = new Swiper("#blog-detail-post .swiper", {
+const postSlider = new Swiper("#fhm-blog-detail-post .swiper", {
   direction: "horizontal",
   speed: 1000,
   slidesPerView: 1,

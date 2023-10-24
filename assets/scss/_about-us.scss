@@ -1,7 +1,7 @@
 // START ABOUT US PAGE
 
 // START BANNER
-#about-banner {
+#fhm-about-banner {
   background: linear-gradient(
       180deg,
       #000 0%,
@@ -26,7 +26,7 @@
 // END BANNER
 
 // START ABOUT
-#about {
+#fhm-about {
   margin-top: 120px;
   @include tablet {
     margin-top: 80px;
@@ -127,7 +127,7 @@
 // END ABOUT
 
 // START STATISTIC
-#about-statistic {
+#fhm-about-statistic {
   margin-top: 166px;
   @include large-desktop {
     margin-top: 100px;
@@ -139,13 +139,13 @@
 // END STATISTIC
 
 // START MISSION
-#about-mission {
+#fhm-about-mission {
   background-image: url(../images/banners/mission-bg.jpg);
 }
 // END MISSION
 
 // START VISION
-#about-vision {
+#fhm-about-vision {
   margin: 84px 0 200px;
   @include tablet {
     margin-bottom: 100px;
@@ -197,7 +197,7 @@
 // END VISION
 
 // START BREAK
-#about-break {
+#fhm-about-break {
   background: url(../images/banners/enjoy-bg.jpg) left no-repeat;
   background-size: cover;
   height: 741px;
@@ -253,7 +253,7 @@
 // END BREAK
 
 // START TEAM
-#about-team {
+#fhm-about-team {
   margin: 100px 0;
   .heading-block-m {
     .desc {
@@ -311,7 +311,7 @@
 // END TEAM
 
 // START MEMORABLE
-#about-memorable {
+#fhm-about-memorable {
   padding: 80px 0;
   background: url(../images/banners/mission-bg.jpg) no-repeat center;
   background-size: cover;
@@ -438,7 +438,7 @@
 // END MEMORABLE
 
 // START VALUES
-#about-values {
+#fhm-about-values {
   margin-top: 100px;
   position: relative;
   .heading-block-m {
@@ -554,7 +554,7 @@
 // END VALUES
 
 // START MAPS
-#about-maps {
+#fhm-about-maps {
   background: url(../images/banners/map-bg.jpg) center no-repeat;
   background-size: cover;
   padding: 70px 0;
@@ -569,7 +569,7 @@
 // END MAPS
 
 // START CLIENTS
-#about-clients {
+#fhm-about-clients {
   margin-top: 100px;
   position: relative;
   .clients-wrapper {

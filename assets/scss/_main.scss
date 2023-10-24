@@ -34,6 +34,11 @@ ol {
   margin: 0;
 }
 
+button {
+  outline: none;
+  border: none;
+}
+
 main {
   margin-top: calc(0px - ($header-height + 21px));
   overflow: hidden;
@@ -329,7 +334,7 @@ main {
 }
 
 // START HEADER
-#header {
+#fhm-header {
   margin-top: 21px;
   position: relative;
   z-index: 10;
@@ -619,12 +624,14 @@ main {
   .news-item {
     &-image {
       width: 100%;
+      aspect-ratio: 1;
       border-radius: $border-radius-xs;
       overflow: hidden;
       margin-bottom: 30px;
       img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
       }
     }
     &-date {
@@ -1047,7 +1054,7 @@ main {
 // END INFO
 
 // START FOOTER
-#footer {
+#fhm-footer {
   @include flex(row, space-between, start, unset, nowrap);
   position: relative;
   .decor-element {

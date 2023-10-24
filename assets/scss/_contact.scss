@@ -1,6 +1,6 @@
 // START CONTACT PAGE
 // START BANNER
-#contact-banner {
+#fhm-contact-banner {
   background: linear-gradient(
       180deg,
       #000 0%,
@@ -28,7 +28,7 @@
 // END BANNER
 
 // START CONTACT
-#contact {
+#fhm-contact {
   margin: 100px 0 100px;
   @include landscape-phone {
     margin-bottom: 50px;

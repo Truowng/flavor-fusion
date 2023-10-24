@@ -1,6 +1,6 @@
 // START BOOKING PAGE
 // START BANNER
-#booking-banner {
+#fhm-booking-banner {
   background: linear-gradient(
       180deg,
       #000 0%,
@@ -22,7 +22,7 @@
 // END BANNER
 
 // START BOOKING
-#booking {
+#fhm-booking {
   margin: 100px 0 100px;
   @include landscape-phone {
     margin-bottom: 50px;

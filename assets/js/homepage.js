@@ -1,4 +1,4 @@
-const heroBanner = new Swiper("#homepage-banner .swiper", {
+const heroBanner = new Swiper("#fhm-homepage-banner .swiper", {
   direction: "horizontal",
   loop: true,
   speed: 1000,
@@ -7,7 +7,7 @@ const heroBanner = new Swiper("#homepage-banner .swiper", {
   },
 });
 
-const aboutSlider = new Swiper("#homepage-about .swiper", {
+const aboutSlider = new Swiper("#fhm-homepage-about .swiper", {
   direction: "horizontal",
   loop: true,
   speed: 1000,
@@ -22,13 +22,13 @@ const aboutSlider = new Swiper("#homepage-about .swiper", {
   },
 });
 
-$("#homepage-product .slick-slider").slick({
+$("#fhm-homepage-product .slick-slider").slick({
   slidesToShow: 1,
   speed: 1000,
   autoplay: true,
   autoplaySpeed: 5000,
-  prevArrow: $("#homepage-product .slider-button-prev"),
-  nextArrow: $("#homepage-product .slider-button-next"),
+  prevArrow: $("#fhm-homepage-product .slider-button-prev"),
+  nextArrow: $("#fhm-homepage-product .slider-button-next"),
   responsive: [
     {
       breakpoint: 1199,
@@ -50,7 +50,7 @@ $("#homepage-product .slick-slider").slick({
   ],
 });
 
-const servicesSlider = new Swiper("#homepage-service .swiper", {
+const servicesSlider = new Swiper("#fhm-homepage-service .swiper", {
   direction: "horizontal",
   loop: true,
   speed: 1000,
@@ -72,7 +72,7 @@ const servicesSlider = new Swiper("#homepage-service .swiper", {
   },
 });
 
-const testimonialsSlider = new Swiper("#homepage-testimonials .swiper", {
+const testimonialsSlider = new Swiper("#fhm-homepage-testimonials .swiper", {
   direction: "horizontal",
   loop: true,
   speed: 1000,
@@ -83,8 +83,8 @@ const testimonialsSlider = new Swiper("#homepage-testimonials .swiper", {
   },
 
   navigation: {
-    nextEl: "#homepage-testimonials .slider-button-next",
-    prevEl: "#homepage-testimonials .slider-button-prev",
+    nextEl: "#fhm-homepage-testimonials .slider-button-next",
+    prevEl: "#fhm-homepage-testimonials .slider-button-prev",
   },
 
   breakpoints: {
@@ -99,7 +99,7 @@ const testimonialsSlider = new Swiper("#homepage-testimonials .swiper", {
   },
 });
 
-const newsSlider = new Swiper("#homepage-news .swiper", {
+const newsSlider = new Swiper("#fhm-homepage-news .swiper", {
   direction: "horizontal",
   loop: true,
   speed: 1000,
@@ -127,7 +127,7 @@ const newsSlider = new Swiper("#homepage-news .swiper", {
   autoHeight: true,
 });
 
-const instagramSlider = new Swiper("#homepage-instagram .swiper", {
+const instagramSlider = new Swiper("#fhm-homepage-instagram .swiper", {
   direction: "horizontal",
   loop: true,
   speed: 1000,
@@ -135,7 +135,7 @@ const instagramSlider = new Swiper("#homepage-instagram .swiper", {
   spaceBetween: 32,
 
   navigation: {
-    nextEl: "#homepage-instagram .slider-button-next",
+    nextEl: "#fhm-homepage-instagram .slider-button-next",
   },
 
   breakpoints: {

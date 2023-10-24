@@ -1,5 +1,5 @@
 const hotNewsThumbSlider = new Swiper(
-  "#blog-hot-news .hot-news-thumb .swiper",
+  "#fhm-blog-hot-news .hot-news-thumb .swiper",
   {
     direction: "vertical",
     slidesPerView: 3,
@@ -10,7 +10,7 @@ const hotNewsThumbSlider = new Swiper(
 );
 
 const hotNewsContentSlider = new Swiper(
-  "#blog-hot-news .hot-news-content .swiper",
+  "#fhm-blog-hot-news .hot-news-content .swiper",
   {
     direction: "horizontal",
     slidesPerView: 1,
@@ -31,3 +31,88 @@ const hotNewsContentSlider = new Swiper(
     },
   }
 );
+
+const newsGroup = document.querySelector(".latest-news-group.active");
+const newsItem = ` <div class="news-item">
+                <div class="news-item-image">
+                  <img
+                    src="./assets/images/news/news.jpg"
+                    alt="News"
+                    title="News"
+                  />
+                </div>
+                <p class="news-item-date">29.Jun.2021</p>
+                <a
+                  href="#"
+                  title="Lily Allen Has Two New Songs on ‘Pan’ Soundtrack"
+                  class="news-item-title"
+                  >Lily Allen Has Two New Songs on ‘Pan’ Soundtrack</a
+                >
+                <p class="news-item-desc">
+                  Many years ago, I worked for my parents who own a video
+                  production company.
+                </p>
+              </div>
+              <div class="news-item">
+                <div class="news-item-image">
+                  <img
+                    src="./assets/images/news/news.jpg"
+                    alt="News"
+                    title="News"
+                  />
+                </div>
+                <p class="news-item-date">29.Jun.2021</p>
+                <a
+                  href="#"
+                  title="Lily Allen Has Two New Songs on ‘Pan’ Soundtrack"
+                  class="news-item-title"
+                  >Lily Allen Has Two New Songs on ‘Pan’ Soundtrack</a
+                >
+                <p class="news-item-desc">
+                  Many years ago, I worked for my parents who own a video
+                  production company.
+                </p>
+              </div>
+              <div class="news-item">
+                <div class="news-item-image">
+                  <img
+                    src="./assets/images/news/news.jpg"
+                    alt="News"
+                    title="News"
+                  />
+                </div>
+                <p class="news-item-date">29.Jun.2021</p>
+                <a
+                  href="#"
+                  title="Lily Allen Has Two New Songs on ‘Pan’ Soundtrack"
+                  class="news-item-title"
+                  >Lily Allen Has Two New Songs on ‘Pan’ Soundtrack</a
+                >
+                <p class="news-item-desc">
+                  Many years ago, I worked for my parents who own a video
+                  production company.
+                </p>
+              </div>
+              <div class="news-item">
+                <div class="news-item-image">
+                  <img
+                    src="./assets/images/news/news.jpg"
+                    alt="News"
+                    title="News"
+                  />
+                </div>
+                <p class="news-item-date">29.Jun.2021</p>
+                <a
+                  href="#"
+                  title="Lily Allen Has Two New Songs on ‘Pan’ Soundtrack"
+                  class="news-item-title"
+                  >Lily Allen Has Two New Songs on ‘Pan’ Soundtrack</a
+                >
+                <p class="news-item-desc">
+                  Many years ago, I worked for my parents who own a video
+                  production company.
+                </p>
+              </div>`;
+const loadMore = () => {
+  newsGroup.innerHTML += newsItem;
+};

@@ -1,5 +1,5 @@
 const servicesBlockSlider = new Swiper(
-  "#services .services-block-2 .services-block-slider .swiper",
+  "#fhm-services .services-block-2 .services-block-slider .swiper",
   {
     direction: "horizontal",
     slidesPerView: 3,
@@ -22,7 +22,7 @@ const servicesBlockSlider = new Swiper(
   }
 );
 
-const newsSlider = new Swiper("#services-news .swiper", {
+const newsSlider = new Swiper("#fhm-services-news .swiper", {
   direction: "horizontal",
   loop: true,
   speed: 1000,
@@ -51,10 +51,10 @@ const newsSlider = new Swiper("#services-news .swiper", {
 
 // SHOW IMAGES
 const imagesArr = document.querySelectorAll(
-  "#services .services-block-2 .services-slider-item img"
+  "#fhm-services .services-block-2 .services-slider-item img"
 );
 const bigImage = document.querySelector(
-  "#services .services-block-2 .services-block-image"
+  "#fhm-services .services-block-2 .services-block-image"
 );
 
 imagesArr.forEach((image) => {
