@@ -4113,7 +4113,8 @@ main {
 #fhm-products .tab-content > .active {
   display: grid;
 }
-#fhm-products .products-group {
+#fhm-products .products-group .products-list {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: 25px;
        column-gap: 25px;
@@ -4121,31 +4122,31 @@ main {
   margin-top: 80px;
 }
 @media only screen and (max-width: 991px) {
-  #fhm-products .products-group {
+  #fhm-products .products-group .products-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media only screen and (max-width: 480px) {
-  #fhm-products .products-group {
+  #fhm-products .products-group .products-list {
     -moz-column-gap: 15px;
          column-gap: 15px;
     row-gap: 30px;
   }
 }
-#fhm-products .products-group .products-item .image {
+#fhm-products .products-group .products-list .products-item .image {
   border-radius: 20px;
   overflow: hidden;
   width: 100%;
   aspect-ratio: 1;
   margin-bottom: 15px;
 }
-#fhm-products .products-group .products-item .image img {
+#fhm-products .products-group .products-list .products-item .image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#fhm-products .products-group .products-item .name {
+#fhm-products .products-group .products-list .products-item .name {
   font-size: 22px;
   line-height: 32px;
   font-weight: 600;
@@ -4158,23 +4159,23 @@ main {
   height: 64px;
 }
 @media only screen and (max-width: 767px) {
-  #fhm-products .products-group .products-item .name {
+  #fhm-products .products-group .products-list .products-item .name {
     font-size: 18px;
     line-height: 25px;
     height: 50px;
   }
 }
 @media only screen and (max-width: 480px) {
-  #fhm-products .products-group .products-item .name {
+  #fhm-products .products-group .products-list .products-item .name {
     font-size: 16px;
     line-height: 1.5;
     height: 48px;
   }
 }
-#fhm-products .products-group .products-item .name:hover {
+#fhm-products .products-group .products-list .products-item .name:hover {
   text-decoration: underline;
 }
-#fhm-products .products-group .products-item .price {
+#fhm-products .products-group .products-list .products-item .price {
   font-size: 18px;
   line-height: 1.3em;
   font-weight: 700;
@@ -4182,7 +4183,7 @@ main {
   display: block;
 }
 @media only screen and (max-width: 767px) {
-  #fhm-products .products-group .products-item .price {
+  #fhm-products .products-group .products-list .products-item .price {
     font-size: 14px;
   }
 }
@@ -4633,13 +4634,14 @@ main {
 #fhm-blog-latest-news .tab-content > .active {
   display: grid;
 }
-#fhm-blog-latest-news .latest-news-group {
+#fhm-blog-latest-news .latest-news-group .news-list {
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
 @media only screen and (max-width: 991px) {
-  #fhm-blog-latest-news .latest-news-group {
+  #fhm-blog-latest-news .latest-news-group .news-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }

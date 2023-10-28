@@ -24,7 +24,9 @@ const productsSlider = new Swiper("#fhm-products .swiper", {
   },
 });
 
-const productGroup = document.querySelector(".products-group.active");
+const productGroup = document.querySelector(
+  ".products-group.active .products-list"
+);
 const productItem = ` <div class="products-item">
                   <div class="image">
                     <img

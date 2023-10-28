@@ -88,63 +88,66 @@
     }
   }
   .products-group {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 25px;
-    row-gap: 45px;
-    margin-top: 80px;
-    @include tablet {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @include mobile {
-      column-gap: 15px;
-      row-gap: 30px;
-    }
-    .products-item {
-      .image {
-        border-radius: $border-radius-m;
-        overflow: hidden;
-        width: 100%;
-        aspect-ratio: 1;
-        margin-bottom: 15px;
-        img {
+    .products-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 25px;
+      row-gap: 45px;
+      margin-top: 80px;
+      @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include mobile {
+        column-gap: 15px;
+        row-gap: 30px;
+      }
+      .products-item {
+        .image {
+          border-radius: $border-radius-m;
+          overflow: hidden;
           width: 100%;
-          height: 100%;
-          object-fit: cover;
+          aspect-ratio: 1;
+          margin-bottom: 15px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
-      }
-      .name {
-        font-size: 22px;
-        line-height: 32px;
-        font-weight: $fw-semiBold;
-        margin-bottom: 8px;
-        display: -webkit-box;
-        text-overflow: ellipsis;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        -webkit-line-clamp: 2;
-        height: 64px;
-        @include landscape-phone {
+        .name {
+          font-size: 22px;
+          line-height: 32px;
+          font-weight: $fw-semiBold;
+          margin-bottom: 8px;
+          display: -webkit-box;
+          text-overflow: ellipsis;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          -webkit-line-clamp: 2;
+          height: 64px;
+          @include landscape-phone {
+            font-size: 18px;
+            line-height: 25px;
+            height: 50px;
+          }
+          @include mobile {
+            font-size: 16px;
+            line-height: 1.5;
+            height: 48px;
+          }
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .price {
           font-size: 18px;
-          line-height: 25px;
-          height: 50px;
-        }
-        @include mobile {
-          font-size: 16px;
-          line-height: 1.5;
-          height: 48px;
-        }
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-      .price {
-        font-size: 18px;
-        line-height: 1.3em;
-        font-weight: $fw-bold;
-        color: $red;
-        display: block;
-        @include landscape-phone {
-          font-size: 14px;
+          line-height: 1.3em;
+          font-weight: $fw-bold;
+          color: $red;
+          display: block;
+          @include landscape-phone {
+            font-size: 14px;
+          }
         }
       }
     }

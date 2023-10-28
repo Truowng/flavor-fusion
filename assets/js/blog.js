@@ -32,7 +32,9 @@ const hotNewsContentSlider = new Swiper(
   }
 );
 
-const newsGroup = document.querySelector(".latest-news-group.active");
+const newsGroup = document.querySelector(
+  ".latest-news-group.active .news-list"
+);
 const newsItem = ` <div class="news-item">
                 <div class="news-item-image">
                   <img
